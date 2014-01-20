@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHolamundo", "PHolamundo\PHolamundo.csproj", "{3F7C1541-104D-443F-8A1B-80740041355C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F7C1541-104D-443F-8A1B-80740041355C}.Debug|x86.ActiveCfg = Debug|x86
+		{3F7C1541-104D-443F-8A1B-80740041355C}.Debug|x86.Build.0 = Debug|x86
+		{3F7C1541-104D-443F-8A1B-80740041355C}.Release|x86.ActiveCfg = Release|x86
+		{3F7C1541-104D-443F-8A1B-80740041355C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PHolamundo\PHolamundo.csproj
+	EndGlobalSection
+EndGlobal
