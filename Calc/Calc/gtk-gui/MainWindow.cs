@@ -7,7 +7,12 @@ public partial class MainWindow
 	private global::Gtk.Entry suma1;
 	private global::Gtk.Entry suma2;
 	private global::Gtk.Entry resul;
+	private global::Gtk.HBox hbox2;
+	private global::Gtk.Button buttonProducto;
+	private global::Gtk.Button buttonClean;
 	private global::Gtk.HBox hbox1;
+	private global::Gtk.Button buttonRestar;
+	private global::Gtk.Button buttonDividir;
 	private global::Gtk.Button buttonSuma;
 	
 	protected virtual void Build ()
@@ -55,33 +60,92 @@ public partial class MainWindow
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child vbox1.Gtk.Box+BoxChild
+		this.hbox2 = new global::Gtk.HBox ();
+		this.hbox2.Name = "hbox2";
+		this.hbox2.Spacing = 6;
+		// Container child hbox2.Gtk.Box+BoxChild
+		this.buttonProducto = new global::Gtk.Button ();
+		this.buttonProducto.CanFocus = true;
+		this.buttonProducto.Name = "buttonProducto";
+		this.buttonProducto.UseStock = true;
+		this.buttonProducto.UseUnderline = true;
+		this.buttonProducto.Label = "Producto";
+		this.hbox2.Add (this.buttonProducto);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.buttonProducto]));
+		w4.Position = 0;
+		w4.Expand = false;
+		w4.Fill = false;
+		// Container child hbox2.Gtk.Box+BoxChild
+		this.buttonClean = new global::Gtk.Button ();
+		this.buttonClean.CanFocus = true;
+		this.buttonClean.Name = "buttonClean";
+		this.buttonClean.UseStock = true;
+		this.buttonClean.UseUnderline = true;
+		this.buttonClean.Label = "C";
+		this.hbox2.Add (this.buttonClean);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.buttonClean]));
+		w5.Position = 2;
+		w5.Expand = false;
+		w5.Fill = false;
+		this.vbox1.Add (this.hbox2);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox2]));
+		w6.PackType = ((global::Gtk.PackType)(1));
+		w6.Position = 3;
+		w6.Expand = false;
+		w6.Fill = false;
+		// Container child vbox1.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox ();
 		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 6;
 		// Container child hbox1.Gtk.Box+BoxChild
+		this.buttonRestar = new global::Gtk.Button ();
+		this.buttonRestar.CanFocus = true;
+		this.buttonRestar.Name = "buttonRestar";
+		this.buttonRestar.UseStock = true;
+		this.buttonRestar.UseUnderline = true;
+		this.buttonRestar.Label = "Restar";
+		this.hbox1.Add (this.buttonRestar);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonRestar]));
+		w7.Position = 0;
+		w7.Expand = false;
+		w7.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.buttonDividir = new global::Gtk.Button ();
+		this.buttonDividir.CanFocus = true;
+		this.buttonDividir.Name = "buttonDividir";
+		this.buttonDividir.UseStock = true;
+		this.buttonDividir.UseUnderline = true;
+		this.buttonDividir.Label = "Dividir";
+		this.hbox1.Add (this.buttonDividir);
+		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonDividir]));
+		w8.Position = 1;
+		w8.Expand = false;
+		w8.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
 		this.buttonSuma = new global::Gtk.Button ();
 		this.buttonSuma.CanFocus = true;
 		this.buttonSuma.Name = "buttonSuma";
+		this.buttonSuma.UseStock = true;
 		this.buttonSuma.UseUnderline = true;
-		this.buttonSuma.Label = global::Mono.Unix.Catalog.GetString ("GtkButton");
+		this.buttonSuma.Label = "Sumar";
 		this.hbox1.Add (this.buttonSuma);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonSuma]));
-		w4.PackType = ((global::Gtk.PackType)(1));
-		w4.Position = 2;
-		w4.Expand = false;
-		w4.Fill = false;
+		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonSuma]));
+		w9.PackType = ((global::Gtk.PackType)(1));
+		w9.Position = 2;
+		w9.Expand = false;
+		w9.Fill = false;
 		this.vbox1.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
-		w5.PackType = ((global::Gtk.PackType)(1));
-		w5.Position = 3;
-		w5.Expand = false;
-		w5.Fill = false;
+		global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+		w10.PackType = ((global::Gtk.PackType)(1));
+		w10.Position = 4;
+		w10.Expand = false;
+		w10.Fill = false;
 		this.Add (this.vbox1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 243;
-		this.DefaultHeight = 163;
+		this.DefaultWidth = 304;
+		this.DefaultHeight = 228;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 	}

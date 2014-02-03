@@ -7,8 +7,26 @@ public partial class MainWindow: Gtk.Window
 	{
 		Build ();
 		buttonSuma.Clicked += delegate{
-			int r = int.Parse(suma1.Text) + int.Parse(suma2.Text);
+			decimal r = decimal.Parse(suma1.Text) + decimal.Parse(suma2.Text);
 			resul.Text=r.ToString();
+		};
+		buttonRestar.Clicked += delegate{
+			decimal r = decimal.Parse(suma1.Text) - decimal.Parse(suma2.Text);
+			resul.Text=r.ToString();
+		};
+		buttonProducto.Clicked += delegate{
+			decimal r = decimal.Parse(suma1.Text) * decimal.Parse(suma2.Text);
+			resul.Text=r.ToString();
+		};
+		buttonDividir.Clicked += delegate{
+			decimal r = decimal.Parse(suma1.Text) / decimal.Parse(suma2.Text);
+			resul.Text=r.ToString();
+		};
+		buttonClean.Clicked += delegate{
+			suma1.Text="";
+			suma2.Text="";
+			resul.Text="";
+
 		};
 	}
 	
